@@ -1,0 +1,56 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00B7FF;
+}
+.user-toolbar-form {
+  text-align: right;
+  line-height: 30px;
+}
+.user-toolbar-form a {
+  margin: 5px;
+}
+table td {
+  padding-left: 10px;
+}
+div.content {
+  width: 100%;
+}
+div.video_container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  height: 240px;
+}
+video.remote_video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #000000;
+  z-index: 1;
+}
+video.local_video {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  z-index: 2;
+  background-color: darkgray;
+  left: 80%;
+  top: 80%;
+}
+div.control_panel {
+  margin-left: auto;
+  width: 640px;
+  margin-right: auto;
+  text-align: right;
+  padding-top: 10px;
+}
+div.contacts {
+  float: left;
+  width: 200px;
+}

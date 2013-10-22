@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  div.user-toolbar-form
+   -if(!user.isAuthenticated)
+     a.login(href="/login") Login
+   -else
+     span.username= "Welcome: " + user.name
+     a.logout(href="/logout") Logout
+  h1= title
+  p Welcome to #{title}
+  div.contacts
+      table
+        -each contact in user.contacts
+         tr
+           td= contact
+           td
+            a(href="#" onclick="webRtcClient.call('#{contact}')") Video call
+  div.video_container
+     video#remoteVideo.remote_video(autoplay)
+     video#localVideo.local_video(autoplay muted)
+  div.control_panel
+     a(href='#', onclick="webRtcClient.hangup();") Hang Up
+  
