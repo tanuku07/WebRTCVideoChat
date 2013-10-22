@@ -1,4 +1,4 @@
-WebRTCVideoChat
+WebRTC Video Chat
 ===============
 
 WebRTCVideoChat
